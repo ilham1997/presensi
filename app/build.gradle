@@ -26,5 +26,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'info.androidhive:barcode-reader:1.1.5'
+    implementation 'com.google.android.gms:play-services-vision:11.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    testCompile 'junit:junit:4.12'
+    // tambahkan baris kode berikut
+    compile 'com.journeyapps:zxing-android-embedded:3.4.0'
 }
